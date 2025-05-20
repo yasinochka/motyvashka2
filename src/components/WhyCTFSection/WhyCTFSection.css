@@ -1,0 +1,83 @@
+.why-ctf{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color:white;
+    margin-left: 130px;
+    margin-right: 130px;
+    margin-bottom: 210px;
+    flex-wrap: wrap; /* для адаптивності */
+    gap: 80px;
+
+}
+.why-ctf-header{
+    width: 100%;
+    text-align: center;
+}
+.flying-header {
+    font-size: 40px;
+    animation: moveText 3s infinite ease-in-out, glitchColor 1s infinite alternate;
+  }
+  @keyframes moveText {
+    0%   { transform: translateX(-10px); }
+    50%  { transform: translateX(10px); }
+    100% { transform: translateX(-10px); }
+  }
+  
+  @keyframes glitchColor {
+    0% {
+      color: red;
+      text-shadow: 2px 0 red, -2px 0 red, 0 2px red, 0 -2px red;
+    }
+    25% {
+      color: blue;
+      text-shadow: 2px 0 white, -2px 0 blue, 0 2px blue, 0 -2px blue;
+    }
+    50% {
+      color: red;
+      text-shadow: 2px 0 red, -2px 0 red, 0 2px white, 0 -2px red;
+    }
+    75% {
+      color: white;
+      text-shadow: 2px 0 blue, -2px 0 blue, 0 2px blue, 0 -2px blue;
+    }
+    100% {
+      color: red;
+      text-shadow: 2px 0 red, -2px 0 red, 0 2px red, 0 -2px red;
+    }
+  }
+
+.why-ctf-left,
+.why-ctf-right {
+  flex: 1;
+  min-width: 300px;
+
+}
+  .why-ctf-left {
+    text-align: justify;
+    color: white;
+    font-size: 30px;
+  }
+  .why-ctf-right{
+    width: 100%; 
+    flex-direction: column;
+  }
+  .image-with-caption {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* підпис буде точно під фоткою */
+    font-weight: bold;
+
+  }
+.caption{
+    margin-top: 20px;
+    font-size: 18px;
+    color: #ff0000;
+  }
+.responsive-img {
+    max-width: 100%;
+    height: 600px;
+    width: 450px;
+    display: flex;
+    border-radius: 15px;
+  }

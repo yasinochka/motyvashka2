@@ -1,0 +1,78 @@
+.Why-me{
+    display:flex;
+    font-family: 'Orbitron';
+    color: white;
+    font-size: 30px;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-right: 100px;
+    justify-content: center;
+    margin-bottom: 210px;
+
+}
+.Why-me h1 {
+    position: relative;
+    margin-bottom: 50px;
+    font-size: 40px;
+    text-align: center;
+    animation: moveText 3s infinite alternate, glitchColor 1s infinite alternate;
+}
+@keyframes moveText {
+    0%   { transform: translateX(-10px); }
+    50%  { transform: translateX(10px); }
+    100% { transform: translateX(-10px); }
+  }
+  
+  @keyframes glitchColor {
+    0% {
+      color: red;
+      text-shadow: 2px 0 red, -2px 0 red, 0 2px red, 0 -2px red;
+    }
+    25% {
+      color: blue;
+      text-shadow: 2px 0 white, -2px 0 blue, 0 2px blue, 0 -2px blue;
+    }
+    50% {
+      color: red;
+      text-shadow: 2px 0 red, -2px 0 red, 0 2px white, 0 -2px red;
+    }
+    75% {
+      color: white;
+      text-shadow: 2px 0 blue, -2px 0 blue, 0 2px blue, 0 -2px blue;
+    }
+    100% {
+      color: red;
+      text-shadow: 2px 0 red, -2px 0 red, 0 2px red, 0 -2px red;
+    }
+}
+.Why-me ul {
+    list-style: none;
+    height: 1%;
+}
+.Why-me li {
+    position: relative;          /* щоб ::before позиціонувався відносно li */
+    padding-left: 40px;         
+    font-size: 28px;
+    text-align: justify;
+  }
+
+  .Why-me li.fade-up{
+    margin-bottom: 20px;
+  }
+  .Why-me li.fade-up{
+    margin-top: 20px;
+  }
+  
+  .Why-me li::before {
+    content: '';
+    position: absolute;
+    left: -80px;                   
+    top: 30%;                   /* по вертикалі посередині */
+    transform: translateY(-50%);
+    width: 100px;               
+    height: 100px;               
+    background-image: url('./logo.svg'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  

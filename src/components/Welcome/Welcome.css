@@ -1,0 +1,68 @@
+.fon{
+  background-image: url('./redplanet2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+}
+.fon-content {
+    padding: 0px;
+    margin-left: 60px;
+    padding-top: 200px;
+  }
+  .text-block p {
+    font-weight: bold;
+    color: black;
+    font-size: 40px;
+    line-height: 1;
+    color: #f0f0f0;
+    font-family: 'Petrona';
+    margin-top: 50px;
+    margin-left: 60px;
+  }
+  .under-block {
+    font-weight: bold;
+    font-size: 25px;
+    word-spacing: 10px;
+    line-height: 1;
+    color: #f0f0f0;
+    font-family: 'Petrona';
+    margin-top: 60px;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  
+  @keyframes glitch {
+    0% {
+      transform: translateX(0);
+      text-shadow: 25px 0 red, -5px 0 blue, 0 2px green;
+    }
+    25% {
+      transform: translateX(-2px);
+      text-shadow: -2px 0 red, 8px 0 blue, 0 2px green;
+    }
+    50% {
+      transform: translateX(2px);
+      text-shadow: 5px 0 red, 2px 0 blue, 10 2px green;
+    }
+    75% {
+      transform: translateX(-2px);
+      text-shadow: -2px 0 red, 2px 0 blue, 0 2px green;
+    }
+    100% {
+      transform: translateX(0);
+      text-shadow: 10px 0 red, -2px 0 blue, 0 2px green;
+    }
+  }
+
+  .glitch {
+    position: relative;
+    font-size: 3rem;
+    color: white;
+    animation: glitch 0.5s infinite;
+    display: inline-block;
+    overflow: hidden;
+  }
+  

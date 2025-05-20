@@ -1,0 +1,73 @@
+.skills {
+  margin-top: 200px;
+    margin-bottom:20px ;
+    text-align: center;
+  }
+  
+  .Skills-header {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 20px;
+    animation: moveText 3s infinite ease-in-out, glitchColor 1s infinite alternate;
+  }
+  @keyframes moveText {
+    0%   { transform: translateX(-10px); }
+    50%  { transform: translateX(10px); }
+    100% { transform: translateX(-10px); }
+  }
+  
+  @keyframes glitchColor {
+    0% {
+      color: red;
+      text-shadow: 2px 0 red, -2px 0 red, 0 2px red, 0 -2px red;
+    }
+    25% {
+      color: blue;
+      text-shadow: 2px 0 white, -2px 0 blue, 0 2px blue, 0 -2px blue;
+    }
+    50% {
+      color: red;
+      text-shadow: 2px 0 red, -2px 0 red, 0 2px white, 0 -2px red;
+    }
+    75% {
+      color: white;
+      text-shadow: 2px 0 blue, -2px 0 blue, 0 2px blue, 0 -2px blue;
+    }
+    100% {
+      color: red;
+      text-shadow: 2px 0 red, -2px 0 red, 0 2px red, 0 -2px red;
+    }
+  }
+  .skill-photo {
+    width: 250px;
+    height: 250px;
+    background: #111;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 12px;
+    padding: 15px;
+    margin: 0 auto;
+    transition: transform 0.6s ease-in-out, box-shadow 0.6s ease-in-out;
+    box-shadow: 0 0 10px rgba(187, 5, 2, 0.683);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .skill-photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(173, 25, 5, 0.7);
+  }
+  
+  .skill-photo img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  
+  .skill-photo p {
+    color: white;
+    font-size: 16px;
+  }
+  

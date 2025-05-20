@@ -1,0 +1,49 @@
+section {
+  margin-top: -60px; 
+}
+.navbar {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(38, 8, 8); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    box-sizing: border-box;
+
+  }
+  
+  .logo {
+    width: 100px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: block;
+    transition: transform 1s; 
+}
+
+.logo:hover {
+  transform: rotateZ(360deg);
+}
+  
+  .navbar-menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    color: white;
+    font-size: 18px;
+  }
+  
+  .navbar-menu li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .navbar-menu li a:hover {
+    color: #bf0d0d; 
+  }
+  
